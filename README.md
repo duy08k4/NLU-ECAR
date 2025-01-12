@@ -86,5 +86,7 @@ python app.py
 App sẽ được chạy trên ```http://127.0.0.1:4000```
 
 ## Các đường dẫn
-- Thiết kế của ứng dụng [NLU-ECAR Figma](https://www.figma.com/file/3683368336833683368336833683368336833683/NLU-ECAR?node-id=0%3A1&t=0123456789abcdefghijklmnopqrstuvwxyz%3A0)
+- Thiết kế của ứng dụng [NLU-ECAR Figma](https://www.figma.com/design/pfVg9vQxRt9IpyvnVmdGhC/GIS-%E1%BB%A8ng-D%E1%BB%A5ng---Giao-di%E1%BB%87n?node-id=0-1&t=Yy11qyZfebZKrQXj-1)
+
+
 - Ứng dụng demo [NLU-ECAR demo](https://nlu-ecar.onrender.com)
