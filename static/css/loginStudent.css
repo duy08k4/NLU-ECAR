@@ -1,0 +1,105 @@
+.loginStudent {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loginStudent__funcBox {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginStudent__inputTitle {
+    height: 40px;
+    width: 40px;
+    background-color: #FDC029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.loginStudent__input {
+    outline: none;
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.loginStudent__optionForm {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.loginStudent__optionBox {
+    height: fit-content;
+    width: fit-content;
+}
+
+.loginStudentForgotPassword {
+    display: flex;
+    align-items: center;
+
+    .loginStudentForgotPassword__direction {
+        font-size: 12px;
+        color: #EEEEEE;
+        font-weight: lighter !important;
+        font-style: italic;
+    }
+}
+
+.loginStudent__buttonBox {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .loginStudent__buttonBox__loginBtnBox {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .loginStudent__buttonBox__loginBtn {
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            text-transform: uppercase;
+            color: white;
+            background-color: #2D6438;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    .loginStudent__buttonBox__otherBtn {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        a {
+            font-size: 12px;
+            color: white;
+            font-style: italic !important;
+        }
+    }
+}

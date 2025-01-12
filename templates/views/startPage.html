@@ -1,0 +1,25 @@
+{% extends "emptyBase.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/startPage.css') }}">
+    <div class="startPage">
+
+        <div class="startPage__titleBox">
+            <div class="noneSelect startPage__titleBox__headerBox">
+                <h1 class="startPage__titleBox__header startPage__titleBox__header1">trường đại học nông lâm</h1>
+                <h1 class="startPage__titleBox__header startPage__titleBox__header1">thành phố hồ chí minh</h1>
+            </div>
+
+            <div class="startPage__titleBox__logoBox">
+                <img class="noneSelect startPage__titleBox__logo" src="../../static/img/NLU-ECAR_Logo.png" alt="NLU-ECAR_Logo">
+            </div>
+        </div>
+        
+        <div class="startPage__buttonBox">
+            <a href="/login/student" class="startPage__buttonBox__button startPage__buttonBox__buttonStudent">sinh viên</a>
+            <a href="/login/driver" class="startPage__buttonBox__button startPage__buttonBox__buttonDriver">tài xế</a>
+        </div>
+    </div>
+
+    <script type="module" src="../../static/Js/removeOldUser.js" defer></script>
+{% endblock %}

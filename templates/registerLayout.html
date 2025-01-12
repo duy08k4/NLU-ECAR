@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registerLayout.css') }}">
+    <title>NLU-ECAR - Đăng Ký</title>
+</head>
+
+<body>
+
+    <div class="registerLayout">
+        <div class="registerLayout__titleBox">
+            <div class="noneSelect registerLayout__titleBox__headerBox">
+                <h1 class="registerLayout__titleBox__header registerLayout__titleBox__header1">trường đại học nông lâm
+                </h1>
+                <h1 class="registerLayout__titleBox__header registerLayout__titleBox__header2">thành phố hồ chí minh
+                </h1>
+            </div>
+
+            <div class="registerLayout__titleBox__logoBox">
+                <img class="noneSelect registerLayout__titleBox__logo" src="../../static/img/NLU-ECAR_Logo.png"
+                    alt="NLU-ECAR_Logo">
+            </div>
+        </div>
+        {% block content %}
+        
+        {% endblock %}
+
+        <div class="registerLayout__instructionForm">
+            <div class="registerLayout__instructionForm__view">
+                <div class="registerLayout__instructionForm__view__titleBox">
+                    <h2 class="noneSelect registerLayout__instructionForm__view__titleBox--content">Hướng dẫn</h2>
+                </div>
+
+                <div class="registerLayout__instructionForm__view__instructionForm">
+                    <div class="registerLayout__instructionForm__view__instructionBox">
+                        <div class="registerLayout__instructionForm__view__instructionBox__iconBox">
+                            <img class="noneSelect registerLayout__instructionForm__view__instructionBox__icon registerLayout__instructionForm__view__instructionBox__userIcon" src="../static/img/userIcon.png" alt="User Icon">
+                        </div>
+
+                        <ul class="noneSelect registerLayout__instructionForm__view__instructionBox__contentForm registerLayout__instructionForm__view__instructionBox__contentForm1">
+                            
+                        </ul>
+                    </div>
+
+                    <div class="registerLayout__instructionForm__view__instructionBox">
+                        <div class="registerLayout__instructionForm__view__instructionBox__iconBox">
+                            <img class="noneSelect registerLayout__instructionForm__view__instructionBox__icon registerLayout__instructionForm__view__instructionBox__userIcon" src="../static/img/userIcon.png" alt="User Icon">
+                        </div>
+
+                        <ul class="noneSelect registerLayout__instructionForm__view__instructionBox__contentForm registerLayout__instructionForm__view__instructionBox__contentForm2">
+                            
+                        </ul>
+                    </div>
+
+                    <div class="registerLayout__instructionForm__view__instructionBox">
+                        <div class="registerLayout__instructionForm__view__instructionBox__iconBox">
+                            <img class="noneSelect registerLayout__instructionForm__view__instructionBox__icon registerLayout__instructionForm__view__instructionBox__userIcon" src="../static/img/userIcon.png" alt="User Icon">
+                        </div>
+
+                        <ul class="noneSelect registerLayout__instructionForm__view__instructionBox__contentForm registerLayout__instructionForm__view__instructionBox__contentForm3">
+                            
+                        </ul>
+                    </div>
+
+                    <div class="registerLayout__instructionForm__view__instructionBox">
+                        <div class="registerLayout__instructionForm__view__instructionBox__iconBox">
+                            <img class="noneSelect registerLayout__instructionForm__view__instructionBox__icon registerLayout__instructionForm__view__instructionBox__userIcon" src="../static/img/userIcon.png" alt="User Icon">
+                        </div>
+
+                        <ul class="noneSelect registerLayout__instructionForm__view__instructionBox__contentForm registerLayout__instructionForm__view__instructionBox__contentForm4">
+                        
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="registerLayout__instructionForm__view__buttonBox">
+                    <button class="registerLayout__instructionForm__view__buttonClose">X</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/Js/registerPage.js" defer></script>
+    <script type="module" src="../static/Js/anounce.js" defer></script>
+</body>
+
+</html>

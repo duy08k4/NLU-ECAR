@@ -1,0 +1,75 @@
+{% extends "registerLayout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/registerStudent.css') }}">
+
+<form class="registerStudent">
+
+    <div class="registerStudent__funcBox registerStudent__StudentNameInputBox">
+        <div class="registerStudent__inputTitle registerStudent__StudentNameInputBox__inputTitle">
+            <img 
+                class="noneSelect registerStudent__inputTitle__icon registerStudent__inputTitle__icon__userIcon" 
+                src="../../../static/img/userIcon.png" 
+                alt="User Icon"
+            >
+        </div>
+        
+        <input name="registerStudent_StudentName" class="registerStudent__input registerStudent__StudentNameInputBox__input" type="text" placeholder="HO VA TEN">
+    </div>
+
+    <div class="registerStudent__funcBox registerStudent__StudentGmailInputBox">
+        <div class="registerStudent__inputTitle registerStudent__StudentGmailInputBox__inputTitle">
+            <img 
+                class="noneSelect registerStudent__inputTitle__icon registerStudent__inputTitle__icon__gmailIcon" 
+                src="../../../static/img/gmailIcon.png" 
+                alt="Gmail Icon"
+            >
+        </div>
+        
+        <input name="registerStudent_StudentGmail" class="registerStudent__input registerStudent__StudentGmailInputBox__input" type="text" placeholder="Gmail sinh viên">
+    </div>
+
+    <div class="registerStudent__funcBox registerStudent__StudentVerifyInputBox">
+        <div class="registerStudent__StudentVerifyInputBox__inputBox">
+            <div class="registerStudent__inputTitle registerStudent__StudentVerifyInputBox__inputTitle">
+                <img 
+                    class="noneSelect registerStudent__inputTitle__icon registerStudent__inputTitle__icon__verifyIcon" 
+                    src="../../../static/img/keyIcon.png" 
+                    alt="Verify Icon"
+                >
+            </div>
+            
+            <input name="registerStudent_StudentVerify" class="registerStudent__input registerStudent__StudentVerifyInputBox__input" type="password" placeholder="Mã xác nhận" maxlength=" 6">
+        </div>
+
+        <div class="registerStudent__StudentVerifyInputBox__sendVerifyBtnBox">
+            <button class="registerStudent__StudentVerifyInputBox__sendVerifyBtn">Gửi</button>
+        </div>
+    </div>
+
+    <div class="registerStudent__funcBox registerStudent__StudentPasswordInputBox">
+        <div class="registerStudent__inputTitle registerStudent__StudentPasswordInputBox__inputTitle">
+            <img 
+                class="noneSelect registerStudent__inputTitle__icon registerStudent__inputTitle__icon__passwordIcon" 
+                src="../../../static/img/lockIcon.png" 
+                alt="Password Icon"
+            >
+        </div>
+        
+        <input name="registerStudent_StudentPassword" class="registerStudent__input registerStudent__StudentPasswordInputBox__input" type="password" placeholder="Mật khẩu">
+    </div>
+
+    <div class="registerStudent__buttonBox">
+        <div class="registerStudent__buttonBox__registerBtnBox">
+            <button class="registerStudent__buttonBox__registerBtn" type="submit">Đăng Ký</button>
+        </div>
+        <div class="registerStudent__buttonBox__otherBtn">
+            <a class="registerStudent__buttonBox__otherBtn_backToMain" href="/login/student">Đã có tài khoản?</a>
+            <button class="registerStudent__buttonBox__otherBtn_changeToRegister">Hướng dẫn</button>
+        </div>
+    </div>
+</form>
+
+<script type="module" src="../../../static/Js/registerStudent.js"></script>
+
+{% endblock %}

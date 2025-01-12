@@ -1,0 +1,124 @@
+.registerStudent {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.registerStudent__funcBox {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerStudent__inputTitle {
+    height: 40px;
+    width: 40px;
+    background-color: #FDC029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.registerStudent__input {
+    outline: none;
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.registerStudent__buttonBox {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .registerStudent__buttonBox__registerBtnBox {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .registerStudent__buttonBox__registerBtn {
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            text-transform: uppercase;
+            color: white;
+            background-color: #2D6438;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    .registerStudent__buttonBox__otherBtn {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        .registerStudent__buttonBox__otherBtn_backToMain {
+            font-size: 12px;
+            color: white;
+            font-style: italic !important;
+        }
+
+        .registerStudent__buttonBox__otherBtn_changeToRegister {
+            height: fit-content;
+            width: fit-content;
+            font-size: 12px;
+            color: white;
+            background-color: #C31F22;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+.registerStudent__StudentVerifyInputBox {
+    height: 100%;
+    width: fit-content;
+    justify-content: space-between !important;
+
+    .registerStudent__StudentVerifyInputBox__inputBox {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registerStudent__StudentVerifyInputBox__input {
+        width: 180px !important;
+    }
+
+    .registerStudent__StudentVerifyInputBox__sendVerifyBtnBox {
+        margin-left: 10px;
+    }
+
+    .registerStudent__StudentVerifyInputBox__sendVerifyBtn {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bolder;
+        color: white;
+        background-color: #2D6438;
+        padding: 10px 17px;
+        border: none;
+        border-radius: 5px;
+    }
+}

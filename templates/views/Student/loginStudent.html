@@ -1,0 +1,52 @@
+{% extends "loginLayout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/loginStudent.css') }}">
+
+<form class="loginStudent">
+
+    <div class="loginStudent__funcBox loginStudent__studentIDInputBox">
+        <div class="loginStudent__inputTitle loginStudent__studentIDInputBox__inputTitle">
+            <img 
+                class="noneSelect loginStudent__passwordInputBox__inputTitle__icon loginStudent__passwordInputBox__inputTitle__icon__userIcon" 
+                src="../../../static/img/userIcon.png" 
+                alt="User Icon"
+            >
+        </div>
+        
+        <input name="loginStudent_StudentID" class="loginStudent__input loginStudent__studentIDInputBox__input" type="text" placeholder="Mã số sinh viên">
+    </div>
+    
+    <div class="loginStudent__funcBox loginStudent__passwordInputBox">
+        <div class="loginStudent__inputTitle loginStudent__passwordInputBox__inputTitle">
+            <img
+                class="noneSelect loginStudent__passwordInputBox__inputTitle__icon loginStudent__passwordInputBox__inputTitle__icon__lockIcon" 
+                src="../../../static/img/lockIcon.png" 
+                alt="User Icon"
+            >
+        </div>
+
+        <input name="loginStudent_password" class="loginStudent__input loginStudent__passwordInputBox__input" type="password" placeholder="Mật khẩu">
+        <i class="fa-solid fa-lock"></i>
+    </div>
+
+    <div class="loginStudent__optionForm">
+        <div class="loginStudent__optionBox loginStudentForgotPassword">
+            <a class="loginStudentForgotPassword__direction" href="/student/fogotpassword">Quên mật khẩu?</a>
+        </div>
+    </div>
+
+    <div class="loginStudent__buttonBox">
+        <div class="loginStudent__buttonBox__loginBtnBox">
+            <button class="loginStudent__buttonBox__loginBtn" type="submit">đăng nhập</button>
+        </div>
+        <div class="loginStudent__buttonBox__otherBtn">
+            <a class="loginStudent__buttonBox__otherBtn_backToMain" href="/">Quay lại trang chính</a>
+            <a class="loginStudent__buttonBox__otherBtn_changeToRegister" href="/register/student">Chưa có tài khoản?</a>
+        </div>
+    </div>
+
+</form>
+
+<script type="module" src="../../../static/Js/loginStudent.js" defer></script>
+{% endblock %}

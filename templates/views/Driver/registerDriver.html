@@ -1,0 +1,70 @@
+{% extends "registerLayout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/registerDriver.css') }}">
+
+<form class="registerDriver">
+
+    <div class="registerDriver__funcBox registerDriver__DriverNameInputBox">
+        <div class="registerDriver__inputTitle registerDriver__DriverNameInputBox__inputTitle">
+            <img 
+                class="noneSelect registerDriver__inputTitle__icon registerDriver__inputTitle__icon__userIcon" 
+                src="../../../static/img/userIcon.png" 
+                alt="User Icon"
+            >
+        </div>
+        
+        <input name="registerDriver_DriverName" class="registerDriver__input registerDriver__DriverNameInputBox__input" type="text" placeholder="HO VA TEN">
+    </div>
+
+    <div class="registerDriver__funcBox registerDriver__DriverGmailInputBox">
+        <div class="registerDriver__inputTitle registerDriver__DriverGmailInputBox__inputTitle">
+            <img 
+                class="noneSelect registerDriver__inputTitle__icon registerDriver__inputTitle__icon__gmailIcon" 
+                src="../../../static/img/gmailIcon.png" 
+                alt="Gmail Icon"
+            >
+        </div>
+        
+        <input name="registerDriver_DriverGmail" class="registerDriver__input registerDriver__DriverGmailInputBox__input" type="text" placeholder="Gmail">
+    </div>
+    
+    <div class="registerDriver__funcBox registerDriver__DriverPhoneInputBox">
+        <div class="registerDriver__inputTitle registerDriver__inputTitle">
+            <img
+                class="noneSelect registerDriver__inputTitle__icon registerDriver__inputTitle__icon__phoneIcon" 
+                src="../../../static/img/phoneIcon.png" 
+                alt="Phone Icon"
+            >
+        </div>
+
+        <input name="registerDriver_DriverPhone" class="registerDriver__input registerDriver__DriverPhone__input" type="password" placeholder="Số điện thoại">
+    </div>
+
+    <div class="registerDriver__funcBox registerDriver__passwordInputBox">
+        <div class="registerDriver__inputTitle registerDriver__inputTitle">
+            <img
+                class="noneSelect registerDriver__inputTitle__icon registerDriver__inputTitle__icon__lockIcon" 
+                src="../../../static/img/lockIcon.png" 
+                alt="Password Icon"
+            >
+        </div>
+
+        <input name="registerDriver_DriverPassword" class="registerDriver__input registerDriver__DriverPassword__input" type="password" placeholder="Mật khẩu">
+    </div>
+
+    <div class="registerDriver__buttonBox">
+        <div class="registerDriver__buttonBox__registerBtnBox">
+            <button class="registerDriver__buttonBox__registerBtn" type="submit">Đăng Ký</button>
+        </div>
+        <div class="registerDriver__buttonBox__otherBtn">
+            <a class="registerDriver__buttonBox__otherBtn_backToMain" href="/login/driver">Đã có tài khoản?</a>
+            <button class="registerDriver__buttonBox__otherBtn_changeToRegister">Hướng dẫn</button>
+        </div>
+    </div>
+
+</form>
+
+<script type="module" src="../../../static/Js/registerDriver.js" ></script>
+
+{% endblock %}

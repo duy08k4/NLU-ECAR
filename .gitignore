@@ -1,0 +1,6 @@
+logs/
+temp/
+build/
+config/
+node_modules/
+.env

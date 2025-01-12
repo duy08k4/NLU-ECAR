@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/mainPageStudent.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/main.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <title>NLU-ECAR - Sinh Viên</title>
+    </head>
+
+    <body>
+        <div class="mainPageStudent">
+            <div id="StudentMap" class="mainPageStudent__mapView"></div>
+
+            <div class="mainPageStudent__funcBar">
+                <div class="mainPageStudent__funcBar__buttonBox">
+                    <button class="mainPageStudent__funcBar__button mainPageStudent__funcBar__buttonConfig">
+                        <img src="../../../static/img/figIcon.png" alt="Config Icon">
+                    </button>
+                </div>
+
+                <div class="mainPageStudent__funcBar__buttonBox">
+                    <button class="mainPageStudent__funcBar__button mainPageStudent__funcBar__listEndPoint">
+                        <img src="../../../static/img/endPoint.png" alt="Danh sách điểm đón">
+                    </button>
+                </div>
+
+                <div class="mainPageStudent__funcBar__buttonBox">
+                    <button class="mainPageStudent__funcBar__button mainPageStudent__funcBar__locateDriver">
+                        <img src="../../../static/img/dotIcon.png" alt="Bật định vị">
+                    </button>
+                </div>
+
+                <div class="mainPageStudent__funcBar__buttonBox">
+                    <button class="mainPageStudent__funcBar__button mainPageStudent__funcBar__buttonMyLocation">
+                        <img src="../../../static/img/locationIcon.png" alt="My Location Icon">
+                    </button>
+                </div>
+            </div>
+
+            <div class="mainPageStudent__listRequest">
+
+            </div>
+
+            <div class="mainPageStudent__requestBtnBox">
+                <button class="mainPageStudent_requestBtn mainPageStudent_requestBtnSend">Gửi yêu cầu</button>
+                <button class="mainPageStudent_requestBtn mainPageStudent_requestBtnCancel">Hủy yêu cầu</button>
+            </div>
+        </div>
+
+        <!-- Leaflet -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js" async></script>
+
+        <!-- Import js file -->
+        <script type="module" src="../../../static/Js/mainPageStudent.js" defer></script>
+    </body>
+
+</html>

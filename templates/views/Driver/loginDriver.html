@@ -1,0 +1,52 @@
+{% extends "loginLayout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loginDriver.css') }}">
+
+<form class="loginDriver">
+
+    <div class="loginDriver__funcBox loginDriver__DriverIDInputBox">
+        <div class="loginDriver__inputTitle loginDriver__DriverIDInputBox__inputTitle">
+            <img 
+                class="noneSelect loginDriver__passwordInputBox__inputTitle__icon loginDriver__passwordInputBox__inputTitle__icon__userIcon" 
+                src="../../../static/img/gmailIcon.png" 
+                alt="User Icon"
+            >
+        </div>
+        
+        <input name="loginDriver_Gmail" class="loginDriver__input loginDriver__DriverIDInputBox__input" type="text" placeholder="Gmail">
+    </div>
+    
+    <div class="loginDriver__funcBox loginDriver__passwordInputBox">
+        <div class="loginDriver__inputTitle loginDriver__passwordInputBox__inputTitle">
+            <img
+                class="noneSelect loginDriver__passwordInputBox__inputTitle__icon loginDriver__passwordInputBox__inputTitle__icon__lockIcon" 
+                src="../../../static/img/lockIcon.png" 
+                alt="User Icon"
+            >
+        </div>
+
+        <input name="loginDriver_Password" class="loginDriver__input loginDriver__passwordInputBox__input" type="password" placeholder="Mật khẩu">
+        <i class="fa-solid fa-lock"></i>
+    </div>
+
+    <div class="loginDriver__optionForm">
+        <div class="loginDriver__optionBox loginDriverForgotPassword">
+            <a class="loginDriverForgotPassword__direction" href="/Driver/fogotpassword">Quên mật khẩu?</a>
+        </div>
+    </div>
+
+    <div class="loginDriver__buttonBox">
+        <div class="loginDriver__buttonBox__loginBtnBox">
+            <button class="loginDriver__buttonBox__loginBtn" type="submit">Đăng Nhập</button>
+        </div>
+        <div class="loginDriver__buttonBox__otherBtn">
+            <a class="loginDriver__buttonBox__otherBtn_backToMain" href="/">Quay lại trang chính</a>
+            <a class="loginDriver__buttonBox__otherBtn_changeToRegister" href="/register/Driver">Chưa có tài khoản</a>
+        </div>
+    </div>
+
+    <script type="module" src="../../../static/Js/loginDriver.js"></script>
+</form>
+
+{% endblock %}

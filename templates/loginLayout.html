@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginLayout.css') }}">
+    <title>NLU-ECAR - Đăng Nhập</title>
+</head>
+<body>
+    
+    <div class="loginLayout">
+        <div class="loginLayout__titleBox">
+            <div class="noneSelect loginLayout__titleBox__headerBox">
+                <h1 class="loginLayout__titleBox__header loginLayout__titleBox__header1">trường đại học nông lâm</h1>
+                <h1 class="loginLayout__titleBox__header loginLayout__titleBox__header1">thành phố hồ chí minh</h1>
+            </div>
+
+            <div class="loginLayout__titleBox__logoBox">
+                <img class="noneSelect loginLayout__titleBox__logo" src="../../static/img/NLU-ECAR_Logo.png" alt="NLU-ECAR_Logo">
+            </div>
+        </div>
+        {% block content %} {% endblock %}
+    </div>
+    
+</body>
+</html>

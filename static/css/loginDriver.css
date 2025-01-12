@@ -1,0 +1,105 @@
+.loginDriver {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loginDriver__funcBox {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginDriver__inputTitle {
+    height: 40px;
+    width: 40px;
+    background-color: #FDC029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.loginDriver__input {
+    outline: none;
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.loginDriver__optionForm {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.loginDriver__optionBox {
+    height: fit-content;
+    width: fit-content;
+}
+
+.loginDriverForgotPassword {
+    display: flex;
+    align-items: center;
+
+    .loginDriverForgotPassword__direction {
+        font-size: 12px;
+        color: #EEEEEE;
+        font-weight: lighter !important;
+        font-style: italic;
+    }
+}
+
+.loginDriver__buttonBox {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .loginDriver__buttonBox__loginBtnBox {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .loginDriver__buttonBox__loginBtn {
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            text-transform: uppercase;
+            color: white;
+            background-color: #2D6438;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    .loginDriver__buttonBox__otherBtn {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        a {
+            font-size: 12px;
+            color: white;
+            font-style: italic !important;
+        }
+    }
+}

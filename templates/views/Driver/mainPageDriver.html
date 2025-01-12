@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainPageDriver.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../../../static/css/main.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>NLU-ECAR - Tài Xế</title>
+</head>
+<body>
+    <div class="mainPageDriver">
+        <div id="driverMap" class="mainPageDriver__mapView"></div>
+
+        <div class="mainPageDriver__funcBar">
+            <div class="mainPageDriver__funcBar__buttonBox">
+                <button class="mainPageDriver__funcBar__button mainPageDriver__funcBar__buttonConfig">
+                    <img src="../../../static/img/figIcon.png" alt="Config Icon">
+                </button>
+            </div>
+
+            <div class="mainPageDriver__funcBar__buttonBox">
+                <button class="mainPageDriver__funcBar__button mainPageDriver__funcBar__buttonBuilding">
+                      <img src="../../../static/img/buildingIcon.png" alt="showBuilding">
+                </button>
+            </div>
+
+            <div class="mainPageDriver__funcBar__buttonBox">
+                <button class="mainPageDriver__funcBar__button mainPageDriver__funcBar__buttonGpsStatus">
+                    <img src="../../../static/img/dotIcon.png" alt="GPS Icon">
+                </button>
+            </div>
+
+            <div class="mainPageDriver__funcBar__buttonBox">
+                <button class="mainPageDriver__funcBar__button mainPageDriver__funcBar__buttonMyLocation">
+                    <img src="../../../static/img/locationIcon.png" alt="My Location Icon">
+                </button>
+            </div>
+        </div>
+
+        <div class="listLectureHallConatainer">
+            <div class="listLectureHallConatainer__backBtnBox">
+                <button class="listLectureHallConatainer__backBtn">Quay lại</button>
+                <button class="listLectureHallConatainer__refeshBtn">Làm mới</button>
+            </div>
+
+            <div class="listLectureHallCard"></div>    
+        </div>
+
+        <div class="mainPageDriver__removeRequest__buttonBox">
+            <button class="mainPageDriver__removeRequest__buttonBox--remove">Hủy nhận yêu cầu</button>
+        </div>
+    </div>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" async></script>
+    
+    <!-- Import js file -->
+    <script type="module" src="../../../static/Js/mainPageDriver.js" defer></script>
+
+</body>
+</html>

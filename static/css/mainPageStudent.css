@@ -1,0 +1,369 @@
+.mainPageStudent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#StudentMap {
+    height: 100%;
+    width: 100%;
+    z-index: 0 !important;
+}
+
+.mainPageStudent__funcBar {
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    right: 10px;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainPageStudent__funcBar__buttonBox {
+    height: fit-content;
+    width: fit-content;
+}
+
+.mainPageStudent__funcBar__button {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px gray;
+}
+
+.mainPageStudent__funcBar__locateDriver {
+    border: 4px solid #C31F22 !important;
+}
+
+.mainPageStudent__funcBar__locateDriver.open {
+    border: 4px solid lime !important;
+}
+/* LECTURE HALL */
+.listLectureHallConatainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+.listLectureHallConatainer.open {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.listLectureHallConatainer__backBtnBox {
+    padding: 10px 10px 20px 10px;
+
+    .listLectureHallConatainer__backBtn {
+        font-size: 14px;
+        color: white;
+        background-color: #C31F22;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.listLectureHallCard {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+}
+
+.lectureHallCard {
+    height: fit-content;
+    width: 200px;
+    background-color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.lectureHallCard__imgBox {
+    height: fit-content;
+    width: 100%;
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+}
+
+.lectureHallCard__inforBox {
+    height: fit-content;
+    width: 100%;
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lectureHallCard__inforBox__lectureHallName {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+    padding: 6px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+.lectureHallCard__inforBox__detail {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .lectureHallCard__inforBox__detailInfor {
+        display: flex;
+    }
+
+    .detailNumber {
+        color: #808080;
+    }
+}
+
+.lectureHallCard__buttonBox {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lectureHallCard__button {
+    padding: 6px 30px;
+    color: white;
+    font-weight: 400;
+    background-color: #468F40;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ENTER FREE SPACE CONTAINER */
+.enterFreeSpaceContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+.enterFreeSpaceContainer.open {
+    display: flex !important;
+    justify-content: center;
+}
+
+.enterFreeSpaceContainer__form {
+    height: fit-content;
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 150px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enterFreeSpaceContainer__form__title {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.enterFreeSpaceContainer__form__input {
+    outline: none;
+    text-align: center;
+    height: fit-content;
+    width: 90%;
+    font-size: 16px;
+    background-color: #EEEEEE;
+    border: none;
+    border-bottom: solid 2px #808080;
+    padding: 10px 20px;
+}
+
+.enterFreeSpaceContainer__form__btnBox {
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.enterFreeSpaceContainer__form__btn {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.enterFreeSpaceContainer__form__backToListBuilding {
+    background-color: #DDDDDD;
+    color: black !important;
+}
+
+.enterFreeSpaceContainer__form__acceptFreeSpaceBtn {
+    background-color: #468F40;
+    color: white !important;
+}
+
+/* REQUEST BUTTON */
+.mainPageStudent__requestBtnBox {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: auto;
+    width: fit-content;
+
+    .mainPageStudent_requestBtnSend {
+        display: block !important;
+    }
+
+    .mainPageStudent_requestBtnCancel {
+        display: none !important;
+    }
+}
+
+.mainPageStudent__requestBtnBox.cancel {
+    .mainPageStudent_requestBtnSend {
+        display: none !important;
+    }
+
+    .mainPageStudent_requestBtnCancel {
+        display: block !important;
+    }
+}
+
+.mainPageStudent_requestBtn {
+    height: auto;
+    width: fit-content;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.mainPageStudent_requestBtnSend {
+    background-color: green;
+}
+
+.mainPageStudent_requestBtnCancel {
+    background-color: #C31F22;
+}
+
+/* CONFIG PAGE */
+.configContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.configForm {
+    height: fit-content;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.configForm__titleBox {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+    
+    .configForm__titleBox--content {
+        text-transform: uppercase;
+    }
+}
+
+.configForm__inputBox {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.configForm__inputBox--verifyCode {
+    flex: 1;
+    outline: none;
+    text-align: center;
+    padding: 5px 0;
+    box-shadow: 0 0 5px 2px gray;
+    border: none;
+    border-radius: 5px;
+}
+
+.configForm__inputBox--verifyButton {
+    padding: 10px 20px;
+    background-color: #aaaaaa;
+    border: none;
+    border-radius: 5px;
+}
+
+.configForm__buttonBox {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.configForm__buttonBox--backBtn {
+    height: fit-content;
+    width: fit-content;
+    background-color: #aaaaaa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.configForm__buttonBox--deleteAccountBtn {
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    background-color: #C31F22;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
