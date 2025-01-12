@@ -4,23 +4,23 @@
 **_NLU-ECAR (Nong Lam University Electric Car):_** là một website được phát triển để hỗ trợ sinh viên Trường Đại Học Nông Lâm Thành Phố Hồ Chí Minh có thể tiếp cận dịch vụ xe điện của trường một cách dễ dàng và giúp các tài xế đưa đón sinh viên một cách thuận lợi và nhanh chóng.
 
 ### NLU-ECAR giải quyết điều gì?
--Sự bất tiện khi di chuyển giữa các giảng đường của sinh viên.
--Sự bất tiện khi di chuyển trong khuôn viên trường vào những thời điểm nắng gắt và mưa bão
--Sự phân vân của tài xế trong việc lựa chọn điểm đến tiếp theo.
+- Sự bất tiện khi di chuyển giữa các giảng đường của sinh viên.
+- Sự bất tiện khi di chuyển trong khuôn viên trường vào những thời điểm nắng gắt và mưa bão
+- Sự phân vân của tài xế trong việc lựa chọn điểm đến tiếp theo.
 
 ### Lợi ích của NLU-ECAR
--Sinh viên có thể gửi yêu cầu đi xe đến tài xế một cách dễ dàng và nhanh chóng.
--Sinh viên có thể theo dõi được vị trí của tài xế.
--Tài xế có thể nhận được yêu cầu đi xe một cách dễ dàng và nhanh chóng.
+- Sinh viên có thể gửi yêu cầu đi xe đến tài xế một cách dễ dàng và nhanh chóng.
+- Sinh viên có thể theo dõi được vị trí của tài xế.
+- Tài xế có thể nhận được yêu cầu đi xe một cách dễ dàng và nhanh chóng.
 
 ### Ý tưởng ban đầu của NLU-ECAR
-Đối tượng sinh viên: 
+**Đối tượng sinh viên:** 
 - NLU-ECAR sẽ thông qua định vị GPS của thiết bị để thu thập vị trí của sinh viên. 
 - Dựa trên vị trí thu thập được sẽ xác định sinh viên đang ở giảng đường nào (Mỗi giảng đường được xem là một trạm xe điện). 
 -   Sau đó sẽ gửi yêu cầu đi xe đến tài xế.
 -   Sinh viên có thể hủy yêu cầu đi xe.
 
-Đối tượng tài xế: 
+**Đối tượng tài xế:** 
 -   NLU-ECAR sẽ hiển thị số lượng yêu cầu đi xe điện của mõi giảng đường. 
 -   Tài xế có thể xác định được giảng đường nào đang có nhiều yêu cầu đi xe điện nhất.
 -   Sau đó tài xế chọn điểm đến thì:
@@ -35,14 +35,14 @@
 ![AppStructure](static/img/1AppStructure.png)
 
 ## Tính năng chính
-- Sinh viên
+- **Sinh viên**
     - Đăng nhập
     - Đăng ký
     - Đăng xuất
     - Đặt xe
     - Hủy đặt xe
     - Theo dõi xe (Kích hoạt khi có tài xế đang đến điểm đón)
-- Tài xế
+- **Tài xế**
     - Đăng nhập
     - Đăng ký
     - Đăng xuất
@@ -51,19 +51,19 @@
     - Khoanh vùng điểm đón (Kích hoạt khi tài xế chọn điểm đón)
 
 ## Công nghệ sử dụng
-- Khoanh vùng
+- **Khoanh vùng**
     - [GEOJSON](https://geojson.io/)
-- Thiết kế giao diện
+- **Thiết kế giao diện**
     - Figma
-- Giao diện
+- **Giao diện**
     - HTML
     - CSS
     - JavaScript - Leaflet
-- Hệ thống
+- **Hệ thống**
     - Python - Flask
-- Đám mây
+- **Đám mây**
     - Google Cloud Platform - Firestore
-- Hosting
+- **Hosting**
     - Render
 
 ## Cài đặt và Clone dự án
