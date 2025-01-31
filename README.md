@@ -66,6 +66,20 @@
 - **Hosting**
     - Render
 
+## Thông tin nhóm báo cáo
+- **Lớp**: DH22HM.
+- **Trường**: Trường Đại Học Nông Lâm Thành Phố Hồ Chí Minh.
+- **Môn học**: Điện Toán Đám Mây.
+- **Nhóm báo cáo**: 07.
+- **Số lượng**: 6.
+- **Thành viên**: 
+    - Trần Bá Tường Duy - Trưởng nhóm.
+    - Đỗ Phú Trọng      - Phó nhóm.
+    - Nguyễn Quang Minh - Thành viên.
+    - Nguyễn Nhã Trúc   - Thành viên.
+    - Nguyễn Lê Du Na   - Thành Viên.
+    - Lê Đặng Ngọc Hiếu - Thành viên.
+
 ## Cài đặt và Clone dự án
 **Bước 1**
 - Cài đặt Git: https://git-scm.com/downloads/win
@@ -88,5 +102,6 @@ App sẽ được chạy trên ```http://127.0.0.1:4000```
 ## Các đường dẫn
 - Thiết kế của ứng dụng [NLU-ECAR Figma](https://www.figma.com/design/pfVg9vQxRt9IpyvnVmdGhC/GIS-%E1%BB%A8ng-D%E1%BB%A5ng---Giao-di%E1%BB%87n?node-id=0-1&t=Yy11qyZfebZKrQXj-1)
 
-
 - Ứng dụng demo [NLU-ECAR demo](https://nlu-ecar.onrender.com)
+
+- Video demo: [NLU-ECAR demo video](https://youtu.be/nxUrxAqRQYQ)
